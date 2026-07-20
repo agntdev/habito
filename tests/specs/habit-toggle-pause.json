@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Pause/Resume",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Toggle habit active/paused status"
+            }
+          }
+        ],
+        "send": {
+          "callback": "habit:toggle_pause"
+        }
+      }
+    ]
+  }
+]
